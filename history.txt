@@ -1,0 +1,25 @@
+  371  cd kokoko
+  372  exit
+  373  cd
+  374  git clone https://github.com/Ullairi/kokoko.git
+  375  cd kokoko
+  376  git checkout -b feature
+  377  echo "texttt" >> README.md
+  378  echo "*.log" >> .gitignore
+  379  git add .
+  380  git commit -m "Added new text in README and *.log in .gitignore"
+  381  git commit --amend -m "(ammend)Added new text in README and *.log in .gitignore"
+  382  git push -u origin feature
+  383  ls -la
+  384  git remote set-url origin git@github.com:Ullairi/kokoko.git
+  385  git push -u origin feature
+  386  git checkout main
+  387  git merge feature
+  388  git push
+  389  git log 
+  390  git log --oneline --graph
+  391  history
+  392  history | tail -19
+  393  history | tail -21
+  394  history | tail -21
+  395  history | tail -25 > history.txt
